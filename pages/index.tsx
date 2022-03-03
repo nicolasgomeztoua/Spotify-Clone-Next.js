@@ -3,6 +3,7 @@ import { getSession, GetSessionParams } from 'next-auth/react'
 import Head from 'next/head'
 import Center from '../Components/Center'
 import Sidebar from '../Components/Sidebar'
+import Player from '../Components/Player'
 const Home: NextPage = () => {
   return (
     <div className="h-screen overflow-hidden bg-black">
@@ -16,7 +17,7 @@ const Home: NextPage = () => {
         <Center />
       </main>
 
-      <div>{/* Player */}</div>
+      <Player />
     </div>
   )
 }
