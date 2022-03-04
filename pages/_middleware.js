@@ -13,6 +13,6 @@ export async function middleware(req, res, next) {
   //if no token, take em to login.
 
   if (!token && pathname !== "/login") {
-    return NextResponse.redirect("http://localhost:3000/login");
+    return NextResponse.redirect(process.env.LOGIN_URL);
   }
 } 
