@@ -1,7 +1,8 @@
+import { NextResponse } from "next/server";
 import React from "react";
 
 const redirect = () => {
-  window.location.href("/");
+NextResponse.redirect(process.env.LOGIN_URL);
   return <div>redirect</div>;
 };
 
