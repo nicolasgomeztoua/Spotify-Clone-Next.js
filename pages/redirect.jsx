@@ -1,8 +1,11 @@
-import { NextResponse } from "next/server";
-import React from "react";
+import React, { useEffect } from "react";
 
 const redirect = () => {
-NextResponse.redirect(process.env.LOGIN_URL);
+  useEffect(() => {
+    window.location.replace("/");
+    return;
+  }, []);
+
   return <div>redirect</div>;
 };
 
