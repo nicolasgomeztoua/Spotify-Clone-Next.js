@@ -39,7 +39,7 @@ const Center = () => {
     <div className="flex-grow h-screen overflow-y-scroll scrollbar-hide">
       <header className="absolute top-5 right-8">
         <div
-          className="text-white flex items-center  bg-black space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2"
+          className="text-white flex items-center  bg-black space-x-3 opacity-90 hoveropacity-80 cursor-pointer rounded-full p-1 pr-2"
           onClick={signOut}
         >
           <img
@@ -52,7 +52,7 @@ const Center = () => {
         </div>
       </header>
       <section
-        className={` flex items-end space-x7 bg-gradient-to-b to-black ${colors[randomNum]} h-80 text-white p-8`}
+        className={` flex items-end space-x-7 bg-gradient-to-b to-black ${colors[randomNum]} h-80 text-white p-8`}
       >
         <img
           className="h-44 w-44 shadow-2xl"
@@ -61,7 +61,7 @@ const Center = () => {
         />
         <div>
           <p>PLAYLIST</p>
-          <h1 className="text-2xl md:text-3xl xl:text-5xl font-bold ">
+          <h1 className="text-2xl md-text-3xl xl-text-5xl font-bold ">
             {playlist?.name}
           </h1>
         </div>
