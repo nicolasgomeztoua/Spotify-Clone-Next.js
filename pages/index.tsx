@@ -10,6 +10,7 @@ const Home: NextPage = () => {
       <Head>
         <title> Spotify 2.0.0 </title>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://cdn.tailwindcss.com"></script>
       </Head>
 
       <main className="flex">
